@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/sunde" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sun"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameSun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="name"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/phoneSun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="051-581-9285"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menu1"
+            android:text="메뉴"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/home1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="home1"
+            android:text="홈페이지"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/tel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="tel1"
+            android:text="전화걸기"
+            android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
